@@ -12,7 +12,7 @@ The bullet module is an implementation of the module-physics, it is based on the
 
 ## Requirements
 
-To build this module, you will need a java 9 JDK, Mingw64, and Maven 3.
+To build this module, you will need the latest JDK, Mingw64, Maven and a c++ compiler (mingw).
 
 ## Coding Style and other information
 
@@ -37,7 +37,7 @@ All source code files are licensed under the permissive MIT license
 
 Go to your root directory, where you POM file is located.
 
-      mvn clean install
+      mvn clean install -Pbuild,common-build
 
 This will compile the source code, then run the unit tests, and finally build a jar file and DLL.
 
