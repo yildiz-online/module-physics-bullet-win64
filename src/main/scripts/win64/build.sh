@@ -23,7 +23,7 @@ rm -r bullet
 rm -r java
 rm -r ../../includes
 rm -r ../../c++
-rm -r ../linux64
+rm -r ../win64
 rm libgcc_s_seh-1.dll
 rm libstdc++-6.dll
 rm mingw-toolchain.cmake
