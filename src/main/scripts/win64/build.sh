@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 source ../../../../target/classes/project.txt
 
 VERSION=${VERSION%"-SNAPSHOT"}
@@ -61,7 +63,7 @@ rm libgcc_s_seh-1.dll
 rm libstdc++-6.dll
 rm mingw-toolchain.cmake
 
-return $r1
+exit $r1
 
 
 
