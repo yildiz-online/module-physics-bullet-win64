@@ -1,5 +1,3 @@
-#!/usr/bin/env bash
-
 source ../../../../target/classes/project.txt
 
 VERSION=${VERSION%"-SNAPSHOT"}
