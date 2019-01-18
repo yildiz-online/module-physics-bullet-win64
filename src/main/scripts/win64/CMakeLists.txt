@@ -23,7 +23,7 @@ file(
         ${CMAKE_SOURCE_DIR}/../../c++/*.cpp
 )
 
-add_library(yildizbullet SHARED ${source_files})
+add_library(yildizbullet SHARED ${source_files} ${CMAKE_SOURCE_DIR}/version.rc)
 add_definitions(-O2)
 
 target_link_libraries(yildizbullet ${CMAKE_SOURCE_DIR}/bullet/win64/lib/libBulletDynamics.dll.a)
