@@ -17,13 +17,13 @@ echo "    BLOCK \"StringFileInfo\"" >> version.rc
 echo "    BEGIN" >> version.rc
 echo "        BLOCK \"040904b0\"" >> version.rc
 echo "        BEGIN" >> version.rc
-echo "            VALUE \"FileDescription\", \"Yildiz-Engine Physics engine with Bullet implementation.\"" >> version.rc
+echo "            VALUE \"FileDescription\", \"Yildiz-Engine Physics engine with Bullet\"" >> version.rc
 echo "            VALUE \"FileVersion\", \"$VERSION,0\"" | tr . , >> version.rc
-echo "            VALUE \"InternalName\", \"libyildizbullet.dll\\\0\"" >> version.rc
-echo "            VALUE \"LegalCopyright\", \"Copyright (c) 2019 Gregory Van den Borre\\\0\"" >> version.rc
-echo "            VALUE \"OriginalFilename\", \"libyildizbullet.dll\\\0\"" >> version.rc
+echo "            VALUE \"InternalName\", \"libyildizbullet.dll\"" >> version.rc
+echo "            VALUE \"LegalCopyright\", \"Copyright (c) 2019 Gregory Van den Borre\"" >> version.rc
+echo "            VALUE \"OriginalFilename\", \"libyildizbullet.dll\"" >> version.rc
 echo "            VALUE \"CompanyName\", \"Yildiz-Games\\\0\"" >> version.rc
-echo "            VALUE \"ProductName\", \"Yildiz-Engine Physics Bullet module.\\\0\"" >> version.rc
+echo "            VALUE \"ProductName\", \"Yildiz-Engine Physics Bullet module\"" >> version.rc
 echo "            VALUE \"ProductVersion\", \"$VERSION,0\"" | tr . , >> version.rc
 echo "        END" >> version.rc
 echo "    END" >> version.rc
