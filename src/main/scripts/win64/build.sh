@@ -8,7 +8,7 @@ source $TARGET_PATH/project.txt
 VERSION=${VERSION%"-SNAPSHOT"}
 
 echo "1 VERSIONINFO" > version.rc
-echo "FILEVERSION $VERSION,0" | tr . , >> version.rc
+echo "FILEVERSION $VERSION,$BUILD_NUMBER" | tr . , >> version.rc
 echo "PRODUCTVERSION $VERSION,0" | tr . , >> version.rc
 echo "FILEFLAGSMASK 0x17L" >> version.rc
 echo "FILEFLAGS 0x0L" >> version.rc
@@ -21,7 +21,7 @@ echo "    BEGIN" >> version.rc
 echo "        BLOCK \"040904b0\"" >> version.rc
 echo "        BEGIN" >> version.rc
 echo "            VALUE \"FileDescription\", \"Yildiz-Engine Physics engine with Bullet\"" >> version.rc
-echo "            VALUE \"FileVersion\", \"$VERSION,0\"" | tr . , >> version.rc
+echo "            VALUE \"FileVersion\", \"$VERSION,$BUILD_NUMBER\"" | tr . , >> version.rc
 echo "            VALUE \"InternalName\", \"libyildizbullet.dll\"" >> version.rc
 echo "            VALUE \"LegalCopyright\", \"Copyright (c) 2019 Gregory Van den Borre\"" >> version.rc
 echo "            VALUE \"OriginalFilename\", \"libyildizbullet.dll\"" >> version.rc
