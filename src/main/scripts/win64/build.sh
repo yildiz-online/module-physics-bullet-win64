@@ -53,21 +53,4 @@ cp bullet/win64/bin/libBulletInverseDynamics.dll $TARGET_WIN64/libBulletInverseD
 cp libstdc++-6.dll $TARGET_WIN64/libstdc++-6.dll
 cp libgcc_s_seh-1.dll $TARGET_WIN64/libgcc_s_seh-1.dll
 
-rm -R CMakeFiles
-rm CMakeCache.txt
-rm cmake_install.cmake
-rm Makefile
-rm -r bullet
-rm -r java
-rm -r ../../includes
-rm -r ../../c++
-rm -r ../win64
-rm libgcc_s_seh-1.dll
-rm libstdc++-6.dll
-rm mingw-toolchain.cmake
-
-exit $r1
-
-
-
-
+exit ${r1}
