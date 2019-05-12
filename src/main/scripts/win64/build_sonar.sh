@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cmake . \
 -DCMAKE_BUILD_TYPE=Release \
 -DLIBRARY_OUTPUT_PATH="../../../../target/classes/win64" \
