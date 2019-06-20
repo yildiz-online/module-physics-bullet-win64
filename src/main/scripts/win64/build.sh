@@ -3,7 +3,7 @@
 TARGET_PATH="../../../../target/classes"
 TARGET_WIN64="$TARGET_PATH/win64"
 
-source $TARGET_PATH/project.txt
+source ${TARGET_PATH}/project.txt
 
 VERSION=${VERSION%"-SNAPSHOT"}
 
@@ -38,19 +38,19 @@ echo "END" >> version.rc
 
 cmake . \
 -DCMAKE_BUILD_TYPE=Release \
--DLIBRARY_OUTPUT_PATH=$TARGET_WIN64 \
+-DLIBRARY_OUTPUT_PATH=${TARGET_WIN64} \
 -DCMAKE_TOOLCHAIN_FILE=mingw-toolchain.cmake
 
 make
 r1=$?
 
-cp bullet/win64/bin/libBulletCollision.dll $TARGET_WIN64/libBulletCollision.dll
-cp bullet/win64/bin/libBulletDynamics.dll $TARGET_WIN64/libBulletDynamics.dll
-cp bullet/win64/bin/libBulletSoftBody.dll $TARGET_WIN64/libBulletSoftBody.dll
-cp bullet/win64/bin/libLinearMath.dll $TARGET_WIN64/libLinearMath.dll
-cp bullet/win64/bin/libBullet3Common.dll $TARGET_WIN64/libBullet3Common.dll
-cp bullet/win64/bin/libBulletInverseDynamics.dll $TARGET_WIN64/libBulletInverseDynamics.dll
-cp libstdc++-6.dll $TARGET_WIN64/libstdc++-6.dll
-cp libgcc_s_seh-1.dll $TARGET_WIN64/libgcc_s_seh-1.dll
+cp bullet/win64/bin/libBulletCollision.dll ${TARGET_WIN64}/libBulletCollision.dll
+cp bullet/win64/bin/libBulletDynamics.dll ${TARGET_WIN64}/libBulletDynamics.dll
+cp bullet/win64/bin/libBulletSoftBody.dll ${TARGET_WIN64}/libBulletSoftBody.dll
+cp bullet/win64/bin/libLinearMath.dll ${TARGET_WIN64}/libLinearMath.dll
+cp bullet/win64/bin/libBullet3Common.dll ${TARGET_WIN64}/libBullet3Common.dll
+cp bullet/win64/bin/libBulletInverseDynamics.dll ${TARGET_WIN64}/libBulletInverseDynamics.dll
+cp libstdc++-6.dll ${TARGET_WIN64}/libstdc++-6.dll
+cp libgcc_s_seh-1.dll ${TARGET_WIN64}/libgcc_s_seh-1.dll
 
 exit ${r1}

@@ -13,5 +13,5 @@ rm CMakeCache.txt
 rm cmake_install.cmake
 rm Makefile
 
-return $r1
+return ${r1}
 
